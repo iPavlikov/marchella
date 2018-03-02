@@ -1,0 +1,36 @@
+@import "media"
+
+$primary-color: rgb(118,189,205)
+$active-color: rgb(221,25,36)
+$hover-transition: 300ms
+
+.logo
+	height: 30px
+.navbar
+	.nav-item
+		transition: $hover-transition
+		background-color: $primary-color
+		.nav-link
+			font-size: 14px	!important
+			font-weight: 500 !important
+		.nav-link:hover
+			transition: $hover-transition
+		a.btn
+			background: white
+			color: $primary-color
+			transition: $hover-transition
+		a.btn:hover, a.btn:active
+			background: rgb(48,68,131)
+			color: white
+			transition: $hover-transition
+		a.btn.active
+			background: rgb(48,68,131)
+			color: white
+.clearfix
+	height: 70px
+.alert
+	padding: 10px 15px !important
+	text-align: center
+	font-weight: 400
+	b
+		font-size: 18px
