@@ -4,6 +4,10 @@
   .navbar .logo {
     height: 50px; } }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .special-offer {
+    top: 90px !important; } }
+
 .logo {
   height: 30px; }
 
@@ -34,9 +38,6 @@
     background: #304483;
     color: white; }
 
-.clearfix {
-  height: 70px; }
-
 .alert {
   padding: 10px 15px !important;
   text-align: center;
@@ -53,8 +54,12 @@
   z-index: 10;
   width: 100%; }
 
-.header-carousel {
+.header-carousel, .carousel-img {
   height: 100vh; }
+
+.carousel-img {
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .carousel-control-prev, .carousel-control-next {
   opacity: 0.8 !important; }
