@@ -10,15 +10,16 @@
 .navbar .nav-item {
   -webkit-transition: 300ms;
   transition: 300ms;
-  background-color: #76bdcd; }
+  color: #fff; }
   .navbar .nav-item .nav-link {
     font-size: 14px	!important;
     font-weight: 500 !important; }
+    .navbar .nav-item .nav-link .ripple-decorator {
+      background-color: #fff !important; }
   .navbar .nav-item .nav-link:hover {
-    -webkit-transition: 300ms;
-    transition: 300ms; }
-    .navbar .nav-item .nav-link:hover span {
-      color: #dd1924; }
+    color: #304483; }
+  .navbar .nav-item .active {
+    color: #304483 !important; }
   .navbar .nav-item a.btn {
     background: white;
     color: #76bdcd;
@@ -42,3 +43,20 @@
   font-weight: 400; }
   .alert b {
     font-size: 18px; }
+  .alert button.close {
+    height: 40px;
+    line-height: 10px; }
+
+.special-offer {
+  position: fixed;
+  top: 70px;
+  z-index: 10;
+  width: 100%; }
+
+.header-carousel {
+  height: 100vh; }
+
+.carousel-control-prev, .carousel-control-next {
+  opacity: 0.8 !important; }
+  .carousel-control-prev i, .carousel-control-next i {
+    font-size: 80px !important; }
