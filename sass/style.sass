@@ -11,12 +11,14 @@ $hover-transition: 300ms
 		transition: $hover-transition
 		color: #fff
 		.nav-link
-			font-size: 14px	!important
+			font-size: 14px
 			font-weight: 500 !important
+			transition: $hover-transition
 			.ripple-decorator
 				background-color: #fff !important
 		.nav-link:hover
 			color: $active-color
+			transition: $hover-transition
 		.active
 			color: $active-color !important
 		a.btn
@@ -52,3 +54,33 @@ $hover-transition: 300ms
 	opacity: 0.8 !important
 	i
 		font-size: 80px !important
+.blackout
+	height: 100vh
+	width: 100vw
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background-color: rgba(0,0,0,0.5)
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	text-align: center
+	.title
+		color: white
+	.sub
+		color: lightgray !important
+		margin: 0
+.img-card-tll
+	border-radius: 6px
+	overflow: hidden
+	display: flex
+	justify-content: center
+	max-height: 400px
+	.img
+		width: 100%
+		object-fit: cover
+p.indented
+	text-indent: 30px
