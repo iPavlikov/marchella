@@ -3,7 +3,7 @@
     font-size: 14px	!important;
     font-weight: 500 !important; } }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   .navbar .navbar-brand {
     padding: 0 !important; }
   .navbar .logo {
@@ -13,6 +13,22 @@
   .navbar .nav-item .nav-link {
     font-size: 12px	!important;
     font-weight: 500 !important; } }
+
+@media screen and (max-width: 767px) {
+  .blackout h1 {
+    display: inline-block;
+    width: 65%;
+    font-size: 2rem; }
+  .blackout h3 {
+    display: inline-block;
+    width: 60%;
+    font-size: 1rem; }
+  .img-card-tll {
+    max-height: 300px !important; } }
+
+@media screen and (max-width: 400px) {
+  .img-card-tll {
+    max-height: 250px !important; } }
 
 .logo {
   height: 30px; }
@@ -100,10 +116,15 @@
           align-items: center;
   text-align: center; }
   .blackout .title {
-    color: white; }
+    color: white;
+    display: inline-block;
+    width: 65%; }
   .blackout .sub {
     color: lightgray !important;
     margin: 0; }
+
+.strong-rounded {
+  border-radius: 10px; }
 
 .img-card-tll {
   border-radius: 6px;
@@ -121,4 +142,7 @@
        object-fit: cover; }
 
 p.indented {
-  text-indent: 30px; }
+  text-indent: 30px;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 300; }
